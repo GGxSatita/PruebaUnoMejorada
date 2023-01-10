@@ -1,0 +1,48 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <h1 class="ion-no-border">PRUEBA UNO</h1>
+        <p class="ion-no-border">Aquí comienza todo</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <h2>Bienvenido</h2>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">Usuario</ion-label>
+          <ion-input minlength="3" maxlength="8"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label>Contraseña</ion-label>
+          <ion-input minlength="4" type="password"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button [routerLink]="['/catalogo']" expand="full" color="light">Ingresar</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button [routerLink]="['/registro']" expand="full" fill="clear" color="primary">Crear una cuenta gratis</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button [routerLink]="['/olvido-contrasena']" expand="full" fill="clear" color="danger">
+          ¿Olvido la contraseña?
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
